@@ -4,4 +4,9 @@ type TLinkMenu = {
   offset: number;
 };
 
-export { type TLinkMenu };
+type TVariantAnimationParam = {
+  direction: "up" | "down" | "left" | "right";
+  delay: number;
+};
+
+export { type TLinkMenu, type TVariantAnimationParam };
