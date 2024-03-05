@@ -1,4 +1,9 @@
-import { TLinkMenu, TListAbout, TStatAbout } from "@/@types/index.type";
+import {
+  TLinkMenu,
+  TListAbout,
+  TListProject,
+  TStatAbout,
+} from "@/@types/index.type";
 
 const LINK_NAVBAR: TLinkMenu[] = [
   {
@@ -12,28 +17,8 @@ const LINK_NAVBAR: TLinkMenu[] = [
     offset: -80,
   },
   {
-    name: "class",
-    target: "class",
-    offset: -80,
-  },
-  {
-    name: "team",
-    target: "team",
-    offset: 0,
-  },
-  {
-    name: "prices",
-    target: "prices",
-    offset: -40,
-  },
-  {
-    name: "testimonial",
-    target: "testimonial",
-    offset: 0,
-  },
-  {
-    name: "blog",
-    target: "blog",
+    name: "project",
+    target: "project",
     offset: 0,
   },
   {
@@ -68,4 +53,35 @@ const STATS_ABOUT: TStatAbout[] = [
   { number: 86, text: "Text 4" },
 ];
 
-export { LINK_NAVBAR, LIST_ABOUT, STATS_ABOUT };
+const LIST_PROJECT: TListProject[] = [
+  {
+    title: "Project 1",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis sit quisquam natus, magni dicta omnis architecto, facere tempore iure quam et! Velit numquam cupiditate ab.",
+    image: "/assets/img/app-2.jpg",
+    link: "",
+  },
+  {
+    title: "Project 2",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis sit quisquam natus, magni dicta omnis architecto, facere tempore iure quam et! Velit numquam cupiditate ab.",
+    image: "/assets/img/app-2.jpg",
+    link: "",
+  },
+  {
+    title: "Project 3",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis sit quisquam natus, magni dicta omnis architecto, facere tempore iure quam et! Velit numquam cupiditate ab.",
+    image: "/assets/img/app-2.jpg",
+    link: "",
+  },
+  {
+    title: "Project 4",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis sit quisquam natus, magni dicta omnis architecto, facere tempore iure quam et! Velit numquam cupiditate ab.",
+    image: "/assets/img/app-2.jpg",
+    link: "",
+  },
+];
+
+export { LINK_NAVBAR, LIST_ABOUT, STATS_ABOUT, LIST_PROJECT };

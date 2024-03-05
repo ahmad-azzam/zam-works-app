@@ -11,7 +11,7 @@ const About: React.FC = () => {
   const isInView = useInView(ref);
 
   return (
-    <div className="pt-8 pb-14 md:pt-16 md:pb-28" id="about">
+    <section className="pt-8 pb-14 md:pt-16 md:pb-28" id="about">
       <div className="container mx-auto">
         <div className="flex flex-col items-center gap-2 mb-8">
           <motion.h2
@@ -97,7 +97,7 @@ const About: React.FC = () => {
           </section>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

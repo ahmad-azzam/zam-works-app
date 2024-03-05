@@ -19,9 +19,17 @@ type TVariantAnimationParam = {
   delay: number;
 };
 
+type TListProject = {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+};
+
 export {
   type TLinkMenu,
   type TVariantAnimationParam,
   type TListAbout,
   type TStatAbout,
+  type TListProject,
 };
