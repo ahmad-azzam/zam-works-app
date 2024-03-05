@@ -27,7 +27,7 @@ const Header: React.FC = () => {
   return (
     <header
       className={clsx(
-        "fixed w-full bg-primary-200 transition-all max-w-[1920px] top-0",
+        "fixed w-full bg-primary-200 transition-all max-w-[1920px] top-0 z-50",
         headerActive ? "h-[100px]" : "h-[124px]"
       )}
     >

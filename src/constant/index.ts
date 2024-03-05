@@ -1,4 +1,4 @@
-import { TLinkMenu } from "@/@types/index.type";
+import { TLinkMenu, TListAbout, TStatAbout } from "@/@types/index.type";
 
 const LINK_NAVBAR: TLinkMenu[] = [
   {
@@ -43,4 +43,29 @@ const LINK_NAVBAR: TLinkMenu[] = [
   },
 ];
 
-export { LINK_NAVBAR };
+const LIST_ABOUT: TListAbout[] = [
+  {
+    title: "Software Engineer",
+    subTitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iste ipsa dolorem.",
+  },
+  {
+    title: "Frontend Developer",
+    subTitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iste ipsa dolorem.",
+  },
+  {
+    title: "Fullstack Developer",
+    subTitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iste ipsa dolorem.",
+  },
+];
+
+const STATS_ABOUT: TStatAbout[] = [
+  { number: 19, text: "Text 1" },
+  { number: 47, text: "Text 2" },
+  { number: 50, text: "Text 3" },
+  { number: 86, text: "Text 4" },
+];
+
+export { LINK_NAVBAR, LIST_ABOUT, STATS_ABOUT };

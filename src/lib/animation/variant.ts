@@ -1,5 +1,5 @@
-import { TVariantAnimationParam } from "@/@types/index.type";
-import { Variants } from "framer-motion";
+import type { TVariantAnimationParam } from "@/@types/index.type";
+import type { Variants } from "framer-motion";
 
 const fadeIn = ({ delay, direction }: TVariantAnimationParam): Variants => {
   return {
@@ -28,4 +28,28 @@ const fadeIn = ({ delay, direction }: TVariantAnimationParam): Variants => {
   };
 };
 
-export { fadeIn };
+const statContainer = (): Variants => {
+  return {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.4, duration: 0.5, ease: "linear" },
+    },
+  };
+};
+
+const statItem = (): Variants => {
+  return {
+    hidden: {
+      opacity: 0,
+      y: 20,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: [0.25, 0.6, 0.3, 0.8] },
+    },
+  };
+};
+
+export { fadeIn, statContainer, statItem };
