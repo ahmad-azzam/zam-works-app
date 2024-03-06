@@ -3,7 +3,7 @@ import {
   TListAbout,
   TListProject,
   TStatAbout,
-} from "@/@types/index.type";
+} from "@/@types/index";
 
 const LINK_NAVBAR: TLinkMenu[] = [
   {
